@@ -1,6 +1,3 @@
-Here’s a beautiful and professional `README.md` template for your "JSONify CSV" project:
-
-````markdown
 # JSONify CSV - CSV to JSON Converter
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/theriturajps/JSONify)
@@ -28,7 +25,6 @@ Check out the live demo of **JSONify CSV** at [JSONify.riturajps.in](https://jso
 ```bash
 git clone https://github.com/theriturajps/JSONify.git
 ```
-````
 
 ### 2. Run Locally
 
