@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSONify - CSV to JSON Converter | Free Online Tool</title>
+
+	<!-- SEO Meta Tags -->
+	<meta name="description" content="Convert your CSV files to JSON format easily with JSONify. A fast and reliable CSV to JSON converter online.">
+	<meta name="keywords" content="CSV to JSON, convert CSV to JSON, online CSV converter, CSV tool, free CSV converter">
+	<meta name="author" content="Ritu Raj Pratap Singh">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://jsonify.riturajps.in">
+
+	<!-- Open Graph Meta Tags (for social sharing) -->
+	<meta property="og:title" content="JSONify - CSV to JSON Converter | Free Online Tool">
+	<meta property="og:description" content="Convert CSV files to JSON format online. Fast and free CSV to JSON converter with advanced options like delimiter and encoding.">
+	<meta property="og:image" content="https://avatars.githubusercontent.com/u/107362757?v=4">
+	<meta property="og:url" content="https://jsonify.riturajps.in">
+	<meta property="og:type" content="website">
+
+	<!-- Twitter Card Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="JSONify - CSV to JSON Converter | Free Online Tool">
+	<meta name="twitter:description" content="Convert CSV files to JSON format online with JSONify. Free and fast conversion tool.">
+	<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/107362757?v=4">
+
+	<!-- Favicon -->
+	<link rel="icon" href="./assets/favicon.png" type="image/png">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<!-- Scripts and Styles -->
+	<script src="./assets/dist/papaparse.min.js"></script>
+	<script src="./assets/dist/FileSaver.min.js"></script>
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<!-- Structured Data (JSON-LD for better SEO) -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "JSONify - CSV to JSON Converter",
+		"description": "Convert CSV files to JSON format online with JSONify. Free and fast conversion tool.",
+		"url": "https://jsonify.riturajps.in",
+		"publisher": {
+			"@type": "Organization",
+			"name": "Ritu Raj Pratap Singh",
+			"url": "https://www.riturajps.in",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://avatars.githubusercontent.com/u/107362757?v=4"
+			}
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="converter-card">
+			<div class="converter-header">
+				<h1>JSONify CSV</h1>
+				<p class="text-secondary">CSV to JSON Converter - Free Online Tool</p>
+			</div>
+			
+			<div id="file-upload-area" class="file-upload-area">
+				<div class="upload-icon">📤</div>
+				<input type="file" id="file-input" accept=".csv" class="file-upload-input" multiple>
+				<p>Drag and drop CSV files or <span style="color: var(--primary-color); text-decoration: none;">browse</span> to select files (<span id="size"></span> MB)</p>
+			</div>
+
+			<div class="conversion-options">
+				<div class="option-group">
+					<label for="delimiter-select">Delimiter</label>
+					<select id="delimiter-select" class="select-input">
+						<option value=",">Comma (,)</option>
+						<option value=";">Semicolon (;)</option>
+						<option value="\t">Tab</option>
+					</select>
+				</div>
+				<div class="option-group">
+					<label for="encoding-select">Encoding</label>
+					<select id="encoding-select" class="select-input">
+						<option value="UTF-8">UTF-8</option>
+						<option value="ISO-8859-1">ISO-8859-1</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="progress-container">
+				<div id="progress-bar" class="progress-bar"></div>
+			</div>
+
+			<div id="status-message" style="text-align: center; color: var(--text-secondary);"></div>
+
+			<div class="action-buttons">
+				<button id="download-btn" class="btn btn-primary">Download JSON</button>
+				<button id="preview-btn" class="btn btn-secondary">Preview</button>
+			</div>
+
+			<div id="preview-section" class="preview-section">
+				<pre id="preview-content"></pre>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<p style="text-align: center; color: var(--text-secondary);">Copyright <a style="color: var(--primary-color); text-decoration: none;" href="https://github.com/theriturajps/JSONify" target="_blank" rel="noopener noreferrer">Ritu Raj</a> | All Rights Reserved</p>
+	</footer>
+
+	<script src="./assets/dist/main.js"></script>
+</body>
+
+</html>
