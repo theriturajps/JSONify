@@ -16,7 +16,7 @@
 
 ## Demo
 
-Check out the live demo of **JSONify CSV** at [JSONify.riturajps.in](https://jsonify.riturajps.in).
+Check out the live demo of **JSONify CSV** at [JSONify.riturajps.in](https://jsonify.exonoob.in/).
 
 ## Installation
 
